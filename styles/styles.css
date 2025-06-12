@@ -103,6 +103,12 @@ body{
   color: var(--finflow-black);
 }
 
+.img-cartoes {
+  max-width: 100%;
+  width: 400px;
+  height: auto;
+}
+
 footer{
   text-align: center;
   background-color: var(--finflow-green);
@@ -117,3 +123,83 @@ footer p{
 
 /** Responsivo a partir daqui **/
 
+@media (max-width: 1200px) {
+  .titulo-normal,
+  .titulo-destaque {
+    font-size: 80px;
+  }
+
+  .paragrafo-header {
+    font-size: 20px;
+  }
+
+  .experience h2 {
+    font-size: 40px;
+  }
+
+  .cards-text h2 {
+    font-size: 50px;
+  }
+
+  .cards-text p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .titulo-normal,
+  .titulo-destaque {
+    font-size: 60px;
+  }
+
+  .paragrafo-header {
+    font-size: 18px;
+  }
+
+  .experience {
+    margin: 10% 5%;
+  }
+
+  .experience h2 {
+    font-size: 30px;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .cards-text h2 {
+    font-size: 40px;
+  }
+
+  .cards-text p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo-normal,
+  .titulo-destaque {
+    font-size: 42px;
+  }
+
+  .paragrafo-header {
+    font-size: 16px;
+  }
+
+  .experience h2 {
+    font-size: 24px;
+  }
+
+  .cards-text h2 {
+    font-size: 32px;
+  }
+
+  .cards-text p {
+    font-size: 14px;
+  }
+
+  footer p {
+    font-size: 13px;
+  }
+}
