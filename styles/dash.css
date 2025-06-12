@@ -47,6 +47,8 @@ body {
 }
 
 .logo-text {
+    text-decoration: none;
+    color: var(--cor-verde);
     font-size: 1.5rem;
     font-weight: 700;
 }

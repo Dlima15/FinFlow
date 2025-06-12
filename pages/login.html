@@ -15,7 +15,7 @@
             <div class="container-fluid">
             
             <!-- LOGO -->
-            <a class="navbar-brand d-flex align-items-center" href="#">
+            <a class="navbar-brand d-flex align-items-center" href="../index.html">
                 <img src="../img/FINFLOW LOGO 1 (1).png" alt="FinFlow Logo" height="60" class="me-2">
             </a>
 
@@ -77,12 +77,13 @@
             <form action="#" class="form-login">
                 <div class="input-com-icone">
                     <img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" alt="ícone perfil">
-                    <input type="text" placeholder="E-mail ou nome de usuário">
+                    <input type="text" id="usuario" placeholder="E-mail ou nome de usuário">
                 </div>
                 <div class="input-com-icone">
                     <img src="https://cdn-icons-png.flaticon.com/512/3064/3064155.png" alt="ícone cadeado">
-                    <input type="password" placeholder="Senha">
+                    <input type="password" id="senha" placeholder="Senha">
                 </div>
+                <button onclick="verificarLogin(event)" class="btn-cadastrar">ENTRAR</button>
             </form>
             
             <p class="esqueceu-senha">
@@ -146,7 +147,8 @@
      <footer>
       <p class="footter-p">Developed by Danilo Lima</p>
     </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
-<script src="./js/main.js" defer></script>
+
+    <script src="../js/verified.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
   </body>
 </html>
