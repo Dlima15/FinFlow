@@ -1,0 +1,243 @@
+/* --- CONFIGURAÇÕES GLOBAIS E VARIÁVEIS DE COR --- */
+:root {
+    --cor-verde: #00d455;
+    --cor-fundo: #000000;
+    --cor-cinza-escuro: #4a4a4a;
+    --cor-cinza-claro: #adadad;
+    --cor-branco: #ffffff;
+    --cor-borda: #4f4f4f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--cor-fundo);
+}
+
+/* --- LAYOUT PRINCIPAL --- */
+.container-principal {
+    margin: 8% 8%;
+    display: flex;
+    min-height: 100vh;
+}
+
+.coluna-login, .coluna-cadastro {
+    flex: 1; /* Faz as duas colunas ocuparem o mesmo espaço */
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.coluna-login {
+    background-color: var(--cor-fundo);
+    color: var(--cor-branco);
+}
+
+.coluna-cadastro {
+  border-radius: 8px;
+    background-color: var(--cor-verde);
+    color: var(--cor-fundo);
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* --- COLUNA DA ESQUERDA (LOGIN) --- */
+.social-buttons button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid var(--cor-borda);
+    background-color: var(--cor-branco);
+    color: var(--cor-fundo);
+    font-size: 0.9rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: background-color 0.3s;
+}
+
+.social-buttons button:hover {
+    background-color: #f0f0f0;
+}
+
+.social-buttons img {
+    width: 20px;
+    height: 20px;
+}
+
+.divisor {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+    color: var(--cor-cinza-claro);
+}
+
+.divisor .linha {
+    flex: 1;
+    height: 1px;
+    background-color: var(--cor-borda);
+}
+
+.esqueceu-senha {
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 20px;
+    color: var(--cor-cinza-claro);
+}
+
+.esqueceu-senha a {
+    color: var(--cor-verde);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* --- COLUNA DA DIREITA (CADASTRO) --- */
+.label-grupo {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.date-select-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.date-select-group select {
+    flex: 1; /* Faz os 3 selects ocuparem o mesmo espaço */
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid var(--cor-borda);
+    background-color: var(--cor-branco);
+}
+
+.radio-group {
+    display: flex;
+    gap: 10px;
+}
+
+.radio-group label {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Coloca o texto e o radio nas extremidades */
+    border: 1px solid var(--cor-borda);
+    border-radius: 5px;
+    padding: 10px 15px;
+    background-color: var(--cor-branco);
+    color: #666;
+    cursor: pointer;
+}
+
+.radio-group input[type="radio"] {
+    appearance: none; /* Esconde o radio button padrão */
+    width: 18px;
+    height: 18px;
+    border: 1px solid var(--cor-borda);
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+}
+
+.radio-group input[type="radio"]:checked {
+    background-color: var(--cor-verde);
+    border-color: var(--cor-cinza-escuro);
+}
+
+.termos {
+    font-size: 0.75rem;
+    color: #3b3b3b;
+    margin-top: 15px;
+    line-height: 1.5;
+}
+
+.termos a {
+    color: var(--cor-fundo);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.btn-cadastrar {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: var(--cor-cinza-escuro);
+    color: var(--cor-branco);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-cadastrar:hover {
+    background-color: #2e2e2e;
+}
+
+/* --- COMPONENTES COMPARTILHADOS (INPUTS) --- */
+.input-com-icone {
+    position: relative;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.input-com-icone img {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+}
+
+.input-com-icone input {
+    width: 100%;
+    height: 50px;
+    padding-left: 50px; /* Espaço para o ícone */
+    border-radius: 5px;
+    border: 1px solid var(--cor-borda);
+    background-color: var(--cor-branco);
+    font-size: 1rem;
+}
+
+/* --- AJUSTES PARA TELAS MENORES (RESPONSIVIDADE) --- */
+@media (max-width: 768px) {
+    .container-principal {
+        flex-direction: column; /* Coloca as colunas uma sobre a outra */
+    }
+
+    .coluna-login, .coluna-cadastro {
+        padding: 30px;
+    }
+}
+
+
+
+footer{
+  text-align: center;
+  background-color: var(--cor-verde);
+  color: var(--cor-fundo);
+}
+
+footer p{
+ padding: 0.7%;
+ font-size: 15px;
+ font-weight: 600;
+}

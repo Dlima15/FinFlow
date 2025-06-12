@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Finflow |  Seu banco digital</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/login.css">
+  </head>
+
+  <body>
+  
+    <header class="container-fluid py-3 border-bottom border-secondary">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container-fluid">
+            
+            <!-- LOGO -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="../img/FINFLOW LOGO 1 (1).png" alt="FinFlow Logo" height="60" class="me-2">
+            </a>
+
+            <!-- BOTÃO HAMBÚRGUER -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarFinflow" aria-controls="navbarFinflow" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- MENU COLAPSÁVEL -->
+            <div class="collapse navbar-collapse justify-content-between" id="navbarFinflow">
+
+                <!-- LINKS DE MENU -->
+                <ul class="navbar-nav mb-2 mb-md-0 gap-md-4">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Sobre nós</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Ajuda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Finanças</a>
+                </li>
+                </ul>
+
+                <!-- BOTÃO LOGIN/CADASTRO -->
+                <!--<div class="d-flex mt-3 mt-md-0">
+                <button class="btn btn-success">Entre ou Cadastre-se</button>
+                </div>-->
+
+            </div>
+            </div>
+        </nav>
+    </header>
+   <section class="container-principal">
+        <div class="coluna-login">
+            <h2>BEM-VINDO DE VOLTA!</h2>
+
+            <div class="social-buttons">
+                <button>
+                    <img src="https://cdn-icons-png.flaticon.com/512/2875/2875404.png" alt="Google">
+                    Fazer login com o Google
+                </button>
+                <button>
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+                    Fazer login com o Facebook
+                </button>
+                <button>
+                    <img src="https://cdn-icons-png.flaticon.com/512/1409/1409946.png" alt="X (Twitter)">
+                    Fazer login com o Twitter
+                </button>
+            </div>
+
+            <div class="divisor">
+                <div class="linha"></div>
+                <span>OU</span>
+                <div class="linha"></div>
+            </div>
+
+            <form action="#" class="form-login">
+                <div class="input-com-icone">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" alt="ícone perfil">
+                    <input type="text" placeholder="E-mail ou nome de usuário">
+                </div>
+                <div class="input-com-icone">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3064/3064155.png" alt="ícone cadeado">
+                    <input type="password" placeholder="Senha">
+                </div>
+            </form>
+            
+            <p class="esqueceu-senha">
+                Esqueceu sua senha? <a href="#">Clique aqui.</a>
+            </p>
+        </div>
+
+        <div class="coluna-cadastro">
+            <h2>CADASTRA-SE AQUI</h2>
+            
+            <form action="#">
+                <div class="input-com-icone">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" alt="ícone perfil">
+                    <input type="text" placeholder="Nome completo">
+                </div>
+                <div class="input-com-icone">
+                    <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="ícone carta">
+                    <input type="text" placeholder="Celular ou e-mail">
+                </div>
+                <div class="input-com-icone">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3064/3064155.png" alt="ícone cadeado">
+                    <input type="password" placeholder="Senha">
+                </div>
+
+                <p class="label-grupo">Gênero:</p>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="genero" value="feminino"> F
+                    </label>
+                    <label>
+                        <input type="radio" name="genero" value="masculino"> M
+                    </label>
+                    <label>
+                        <input type="radio" name="genero" value="outro"> Outro
+                    </label>
+                </div>
+
+                <div class="date-select-group">
+                    <select id="dia" name="dia">
+                        <option value="6">6</option>
+                    </select>
+                    <select id="mes" name="mes">
+                        <option value="1">Janeiro</option>
+                    </select>
+                    <select id="ano" name="ano">
+                        <option value="2023">2023</option>
+                    </select>
+                </div>
+
+                <p class="termos">
+                    As pessoas que usam nosso serviço podem ter carregado suas informações de contato no Medium. <a href="#">Saiba mais</a>
+                </p>
+                <p class="termos">
+                    Ao clicar em Cadastre-se, você concorda com nossos <a href="#">Termos</a>, <a href="#">Política de Privacidade</a> e <a href="#">Política de Cookies</a>. Você poderá receber notificações por SMS e cancelar isso quando quiser.
+                </p>
+
+                <button class="btn-cadastrar">CADASTRA-SE</button>
+            </form>
+        </div>
+    </section>
+     <footer>
+      <p class="footter-p">Developed by Danilo Lima</p>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+<script src="./js/main.js" defer></script>
+  </body>
+</html>
