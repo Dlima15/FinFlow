@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+  --finflow-green: #00d95f;       /* Verde da logo e texto "FINFLOW" */
+  --finflow-white: #ffffff;       /* Branco usado nos textos */
+  --finflow-black: #0d0d0d;       /* Fundo principal */
+  --finflow-gray: #d1d5db;        /* Cinza claro do texto secundário */
+  --finflow-green-dark: #005e36;  /* Verde escuro do botão de login/cadastro */
+}
+
+
+
+body{
+    background-color: var(--finflow-black);
+     color: var(--finflow-gray);
+     font-family: Montserrat Alternates;
+}
+
+.section-titulo{
+  margin-top: 10%;
+  text-align: center;
+}
+
+
+.titulo-normal,
+.titulo-destaque {
+  font-size: 120px;
+  font-weight: 800;
+  line-height: 0.9; 
+}
+
+.titulo-normal{
+  font-size: 120px;
+  font-weight: 800;
+}
+
+.titulo-destaque{
+  font-size: 120px;
+  font-weight: 800;
+  color: var(--finflow-green);
+}
+
+
+.paragrafo-header{
+  margin-top: 2%;
+  font-size: 24px;
+  color: var(--finflow-gray);
+}
+
+.texto-roxo{
+  font-weight: 600;
+  color:  #820AD1;
+}
+
+.texto-verde{
+  font-weight: 600;
+  color: var(--finflow-green);
+}
+
+.maquininhas{
+  background-color: var(--finflow-green);
+}
+
+#carouselFinflow{
+  margin-top: 8%;
+}
+
+.experience{
+  text-align: center;
+  margin: 15% 10%;
+
+}
+
+.experience h2{
+  font-size: 50px;
+}
+
+.cards{
+  background-color: var(--finflow-white);
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.cards-text, .cards-cards{
+  padding: 5%;
+
+}
+
+.cards-text h2{
+  color: var(--finflow-black);
+  font-size: 60px;
+}
+
+.texto-verde-card{
+  font-weight: 800;
+  color: var(--finflow-green-dark);
+}
+
+.cards-text p{
+  font-size: 20px;
+  color: var(--finflow-black);
+}
+
+footer{
+  text-align: center;
+  background-color: var(--finflow-green);
+  color: var(--finflow-black);
+}
+
+footer p{
+ padding: 0.7%;
+ font-size: 15px;
+ font-weight: 600;
+}
+
