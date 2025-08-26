@@ -1,1 +1,0 @@
-alert(`Ótimo, você chegou no fim, só clicar no em cima do logo que você volta ao home`)

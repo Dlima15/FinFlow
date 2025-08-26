@@ -1,5 +1,3 @@
-alert("Ótimo, o Login é admin e senha 0001, preencha e vá para próxima tela")
-
 
 function verificarLogin(event) {
     event.preventDefault(); // Impede o submit padrão
